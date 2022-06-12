@@ -16,6 +16,7 @@ body{
 
 :where(body) p{
     font-size: 16px;
+    color: hsl(0, 0%, 48%);
 }
 
 body>header{
@@ -70,10 +71,15 @@ body>main>div{
     background-color: hsl(176, 50%, 47%);
     color: white;
 }
+
 body>main>.projectTitleContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+:where(body>main>.projectTitleContainer) h1,p{
+    margin: 20px auto;
 }
 
 body>main>.projectTitleContainer>img{
@@ -93,6 +99,8 @@ body>main>.projectTitleContainer>div>#bookmarkContainer{
 
 body>main>.projectTitleContainer>div>#bookmarkContainer>#bookmarkBtn{
     padding-left: 50px;
+    background-color: rgb(208, 200, 200);
+    color: hsl(0, 0%, 48%);
 }
 
 body>main>.projectTitleContainer>div>#bookmarkContainer>img{
