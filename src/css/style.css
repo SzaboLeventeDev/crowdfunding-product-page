@@ -91,6 +91,15 @@ body>main>.projectTitleContainer>div>#bookmarkContainer{
     display: flex;
 }
 
+body>main>.projectTitleContainer>div>#bookmarkContainer>#bookmarkBtn{
+    padding-left: 50px;
+}
+
+body>main>.projectTitleContainer>div>#bookmarkContainer>img{
+    position: relative;
+    right: -40px;
+}
+
 body>main>.statisticsContainer>.statistic{
     display: flex;
 }
