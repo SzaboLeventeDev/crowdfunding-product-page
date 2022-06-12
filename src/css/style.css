@@ -8,6 +8,14 @@
 body{
     width: 1440px;
     min-height: 100%;
+    background-color: rgba(240, 255, 255, 0.832);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+:where(body) p{
+    font-size: 16px;
 }
 
 body>header{
@@ -33,3 +41,56 @@ body>header>nav>img{
     cursor: pointer;
 }
 
+/* main */
+body>main{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -80px;
+}
+
+body>main>div{
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+:where(body>main) img{
+    width: 40px;
+    height: auto;
+}
+
+:where(body>main) button{
+    padding: 5px 20px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+}
+body>main>.projectTitleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body>main>.projectTitleContainer>img{
+    position: relative;
+    top: -40px;
+    left: 50%;
+}
+
+body>main>.projectTitleContainer>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+body>main>.projectTitleContainer>div>#bookmarkContainer{
+    display: flex;
+}
+
+body>main>.statisticsContainer>.statistic{
+    display: flex;
+}
